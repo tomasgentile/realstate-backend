@@ -1,0 +1,59 @@
+{
+  "kind": "collectionType",
+  "collectionName": "properties",
+  "info": {
+    "singularName": "property",
+    "pluralName": "properties",
+    "displayName": "Properties",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Nombre": {
+      "type": "string",
+      "required": true
+    },
+    "Habitaciones": {
+      "type": "integer",
+      "required": true
+    },
+    "Estacionamiento": {
+      "type": "integer",
+      "required": true
+    },
+    "WC": {
+      "type": "integer",
+      "required": true
+    },
+    "Precio": {
+      "type": "biginteger"
+    },
+    "Imagen": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "categorias": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::categoria.categoria"
+    },
+    "agentes": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::agente.agente"
+    },
+    "Descripcion": {
+      "type": "text"
+    }
+  }
+}

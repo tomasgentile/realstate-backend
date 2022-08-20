@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "agentes",
+  "info": {
+    "singularName": "agente",
+    "pluralName": "agentes",
+    "displayName": "Agentes",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Nombre": {
+      "type": "string",
+      "required": true
+    },
+    "Email": {
+      "type": "email",
+      "required": true
+    },
+    "Telefono": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
